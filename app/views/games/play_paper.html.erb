@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/assets/css/bootstrap.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<h1>You played
+  <img src="https://i.ytimg.com/vi/w7ma8mweDGw/maxresdefault.jpg" style="height: 80px;">
+  !
+</h1>
+
+<h3>
+  The computer played
+  <% @cmove %>
+  <img src="<%= @image_source %>" style="height: 70px;">
+</h3>
+
+
+<h1> You <%= @res %>!</h1>
+
+
+<h4> Would you like to play again? </h4>
+<ul class="list-unstyled list-inline">
+  <li><a href="/rock"> Play Rock </a></li>
+  <li><a href="/scissors"> Play Scissors </a></li>
+  <li><a href="/paper"> Play Paper </a></li>
+</ul>
